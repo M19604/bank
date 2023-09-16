@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-color: #e1e1e1;
+    font-family: "Josefin Sans";
+    user-select: none;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#signupPage,
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#signupPage {
+    display: none;
+}
+
+#signupPage .container,
+#login .container {
+    height: 65%;
+    width: 65%;
+    background-color: #e31837;
+    border-radius: 2vw;
+    position: relative;
+}
+
+#signupPage .container .title,
+#login .container .title {
+    font-size: 4vw;
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    padding: 2vw;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-align: center;
+}
+
+#signupPage .container #newEmail,
+#signupPage .container #newName,
+#login .container #pin {
+    height: 15%;
+    width: 75%;
+    position: absolute;
+    top: 35%;
+    left: 12.5%;
+    padding: 3vw;
+    box-sizing: border-box;
+    font-size: 2vw;
+    background-color: #e1e1e1;
+    border-radius: 1vw;
+    border: .25vw solid #0053c2;
+    transition: .5s;
+    color: #333;
+    outline: none;
+}
+
+#signupPage .container #newName {
+    top: 20%;
+}
+
+#signupPage .container #newEmail {
+    top: 45%;
+}
+
+#signupPage .container input:hover,
+#signupPage .container input:focus,
+#login .container #pin:hover,
+#login .container #pin:active {
+    border: .25vw solid #012169;
+}
+
+#signupPage .container #createBTN,
+#login .container #loginBTN {
+    height: 15%;
+    width: 75%;
+    position: absolute;
+    top: 70%;
+    left: 12.5%;
+    padding: 3vw;
+    box-sizing: border-box;
+    font-size: 3vw;
+    background-color: #0053c2;
+    border-radius: 1vw;
+    border: .25vw solid #012169;
+    transition: .5s;
+    color: #fff;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+#signupPage .container #createBTN {
+    top: 75%;
+}
+
+#login #signup {
+    position: absolute;
+    top: 84.5%;
+    left: 17.5%;
+    color: #0053c2;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    width: 65%;
+    cursor: pointer;
+}
+
+#login #signup:after {
+    content:"";
+    width: 0%;
+    height: .25vw;
+    background-color: #0053c2;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transition: .5s;
+}
+
+#login #signup:hover:after {
+    width: 50%;
+}
+
+#main .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d1d1d1;
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3vw;
+    width: 100%;
+}
+
+#main .navbar #balance {
+    position: absolute;
+    right: 1vw;
+}
+
+#main .navbar .title {
+    color: #e31837;
+    font-weight: 1000;
+    position: absolute;
+    left: 1vw;
+}
+
+#transferError,
+#signupPage .container #signupError,
+#login .container #loginError {
+    font-size: 2vw;
+    width: 100%;
+    height: 10%;
+    color: #fff;
+    padding: 2vw;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+#transferError {
+    color: #e31837;
+    top: 10%;
+    font-size: 4vw;
+}
+
+#signupPage .container #signupError {
+    top: 60%;
+}
+
+#main #amount,
+#main #transfer {
+    width: 75%;
+    height: 15%;
+    background-color: #e9e9e9;
+    border: .25vw solid #e31837;
+    border-radius: 1vw;
+    font-size: 3vw;
+    color: #333;
+    position: absolute;
+    top: 25%;
+    left: 12.5%;
+    padding: 1vw;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#main #amount {
+    top: 45%;
+    left: 12.5%;
+}
+
+#main #transferSubmit {
+    height: 15%;
+    width: 75%;
+    position: absolute;
+    top: 70%;
+    left: 12.5%;
+    padding: 3vw;
+    box-sizing: border-box;
+    font-size: 3vw;
+    background-color: #0053c2;
+    border-radius: 1vw;
+    border: .25vw solid #012169;
+    transition: .5s;
+    color: #fff;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+    cursor: pointer;
+}
