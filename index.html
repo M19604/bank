@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States of America</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+</head>
+<body>
+    <div class="page" id="login">
+        <div class="container">
+            <div class="title">United States of America</div>
+            <input type="text" id="pin" placeholder="PIN..." maxlength="5">
+            <div id="loginError"></div>
+            <div id="loginBTN">Login</div>
+        </div>
+        <div id="signup">Don't have an account? Sign Up</div>
+    </div>
+    <div class="page" id="main">
+        <div class="navbar">
+            <a class="title">USA Banking</a>
+            <a id="name">N/A</a>
+            <a id="balance">$0</a>
+        </div>
+        <form name="Bank Tracking">
+            <input id="transfer" type="text" placeholder="Transfer to...">
+            <input name="Transaction" id="amount" type="number" placeholder="Amount...">
+            <input name="Recipient" id="recipient" hidden>
+            <input name="Recipient Balance" id="recipientBalance" hidden>
+            <input name="Sender" id="sender" hidden>
+            <input name="Sender Balance" id="senderBalance" hidden>
+            <div id="transferError"></div>
+            <div id="transferSubmit">Transfer</div>
+        </form>
+    </div>
+    <div class="page" id="signupPage">
+        <div class="container">
+            <form name="Account Tracking">
+                <div class="title">Create Account</div>
+                <input name="Name" type="text" id="newName" placeholder="Full Name..." maxlength="25">
+                <input name="Email" type="email" id="newEmail" placeholder="Email...">
+                <input name="PIN" id="newPin" hidden>
+                <div id="signupError"></div>
+                <div id="createBTN">Create</div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+<script src="connect.js"></script>
+<script src="data.js"></script>
+<script src="signup.js"></script>
+<script src="send.js"></script>
+<script src="transfer.js"></script>
+</html>
