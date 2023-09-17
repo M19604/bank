@@ -294,3 +294,36 @@ body {
     font-weight: 1000;
     cursor: pointer;
 }
+
+#accBody .navbar {
+    background-color: #d1d1d1;
+    padding: 2vw;
+    font-size: 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#accBody .navbar .title {
+    color: #e31837;
+    font-weight: 1000;
+    font-size: 2vw;
+}
+
+#accBody span {
+    font-size: 3vw;
+}
+
+#accBody .valueElement {
+    position: absolute;
+    right: 1vw;
+}
+
+#accBody .span {
+    width: 100%;
+    position: relative;
+    padding: 1vw;
+    box-sizing: border-box;
+}
