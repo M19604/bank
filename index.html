@@ -11,7 +11,7 @@
     <div class="page" id="login">
         <div class="container">
             <div class="title">United States of America</div>
-            <input type="text" id="pin" placeholder="PIN..." maxlength="5">
+            <input type="text" id="pin" placeholder="PIN..." maxlength="5" autocomplete="off">
             <div id="loginError"></div>
             <div id="loginBTN">Login</div>
         </div>
@@ -24,8 +24,8 @@
             <a id="balance">$0</a>
         </div>
         <form name="Bank Tracking">
-            <input id="transfer" type="text" placeholder="Transfer to...">
-            <input name="Transaction" id="amount" type="number" placeholder="Amount...">
+            <input id="transfer" type="text" placeholder="Transfer to..." autocomplete="off">
+            <input name="Transaction" id="amount" type="number" placeholder="Amount..." autocomplete="off">
             <input name="Recipient" id="recipient" hidden>
             <input name="Recipient Balance" id="recipientBalance" hidden>
             <input name="Sender" id="sender" hidden>
@@ -38,12 +38,19 @@
         <div class="container">
             <form name="Account Tracking">
                 <div class="title">Create Account</div>
-                <input name="Name" type="text" id="newName" placeholder="Full Name..." maxlength="25">
-                <input name="Email" type="email" id="newEmail" placeholder="Email...">
+                <input name="Name" type="text" id="newName" placeholder="Full Name..." maxlength="25" autocomplete="off">
+                <input name="Email" type="email" id="newEmail" placeholder="Email..." autocomplete="off">
                 <input name="PIN" id="newPin" hidden>
                 <div id="signupError"></div>
                 <div id="createBTN">Create</div>
             </form>
+        </div>
+    </div>
+    <div id="alert">
+        <div class="container">
+            <div class="navbar">USA Banking</div>
+            <div id="text"></div>
+            <div id="closeBTN">Continue</div>
         </div>
     </div>
 </body>
@@ -53,4 +60,5 @@
 <script src="signup.js"></script>
 <script src="send.js"></script>
 <script src="transfer.js"></script>
+<script src="alert.js"></script>
 </html>
