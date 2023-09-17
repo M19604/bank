@@ -17,15 +17,14 @@ createBTN.addEventListener("click", e => {
         var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         var interval = setInterval(function() {
             var tryPin = characters[Math.floor(Math.random() * characters.length)] + characters[Math.floor(Math.random() * characters.length)] + characters[Math.floor(Math.random() * characters.length)] + characters[Math.floor(Math.random() * characters.length)] + characters[Math.floor(Math.random() * characters.length)];
-            alert(tryPin);
             if (Object.values(clientData).includes(tryPin)) {
-
             } else {
                 clearInterval(interval);
                 document.getElementById("newPin").value = tryPin;
                 sendAccount();
                 nameElement.value = "";
                 emailElement.value = "";
+                alert("Account will be created soon.")
             }
         })
     }
