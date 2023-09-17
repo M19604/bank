@@ -28,7 +28,7 @@ function submitTransfer() {
             recipientBalance.value = Object.values(clientData)[Object.values(clientNames).indexOf(transfer.value.trim())] + parseInt(amount.value.replace("e", "").replace("-", ""));
             sendTransfer();
             setTimeout(function() {
-                transferErrorElement.textContent = text;
+                transferErrorElement.textContent = "";
                 transfer.value = "";
                 amount.value = "";
                 recipient.value = "";
@@ -36,6 +36,7 @@ function submitTransfer() {
                 sender.value = "";
                 senderBalance.value = "";
             }, 500)
+            alert("Money will be transferred soon.");
         } else {
             transferError("Insufficient funds.");
         }
