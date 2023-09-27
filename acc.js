@@ -1,5 +1,5 @@
 window.onload = function() {
-    setInterval(function() {
+    setTimeout(function() {
         for (let i = 0; i < Object.keys(clientData).length; i++) {
             var span = document.createElement("div");
             span.className = "span";
@@ -17,5 +17,5 @@ window.onload = function() {
             span.appendChild(nameElement);
             span.appendChild(valueElement);
         }
-    })
+    }, 500)
 }
