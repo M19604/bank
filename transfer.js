@@ -20,7 +20,7 @@ transfer.addEventListener("keyup", e => {
     }
 })
 function submitTransfer() {
-    if (Object.values(clientNames).includes(transfer.value.trim()) && transfer.value.trim() !== document.getElementById("name").textContent.trim()) {
+    if (Object.values(clientNames).includes(transfer.value.trim()) && transfer.value.trim() !== document.getElementById("name").textContent.trim() && !transfer.value .includes("-")) {
         if (Object.values(clientData)[Object.values(clientNames).indexOf(document.getElementById("name").textContent)] >= amount.valueAsNumber) {
             sender.value = Object.getOwnPropertyNames(clientData)[Object.values(clientNames).indexOf(document.getElementById("name").textContent)];
             senderBalance.value = Object.values(clientData)[Object.values(clientNames).indexOf(document.getElementById("name").textContent)] - parseInt(amount.value.replace("e", "").replace("-", ""));
