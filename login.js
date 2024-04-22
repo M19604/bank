@@ -9,7 +9,7 @@ document.getElementById("loginBTN").addEventListener("click", e => {
 })
 
 function login(code) {
-    if (code in clientData) {
+    if (clientData.hasOwnProperty(code)) {
         connect(code);
         document.getElementById("login").style.display = "none";
     } else {
